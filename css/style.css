@@ -1,0 +1,296 @@
+﻿body {
+    background: #fbfdf6;
+}
+
+header {
+    /*padding: 10px 20px 20px;*/
+    margin: 10px;
+    border: 1px solid RGB(231, 226, 215);
+    /*outline: RGB(231, 226, 215) 1.2px solid;*/
+    /*outline-offset: 3px;*/
+    /*border-top: 2px double RGB(231, 226, 215);*/
+
+    /*background-color:InactiveBorder;*/
+    /*border: 1px solid blue;*/
+    border-radius: 8px;
+    position: relative;
+    
+
+
+}
+
+    header img {
+        width: 210px;
+        height: 150px;
+        position: absolute;
+        /*border: 1px solid red;*/
+        float: left;
+        top:0px;
+        left:0;
+    }
+
+    header h1 {
+        width: 100%;
+        position: relative;
+        top: 0;
+        text-align: center;
+        right: 0;
+        /*border: 1px solid black;*/
+
+        /*padding: 10px;*/
+    }
+
+    header h2 {
+        width: 100%;
+        position: absolute;
+        top: 22%;
+        text-align: center;
+        right: 0;
+        padding-bottom: 0px;
+        /*border: 1px solid black;*/
+    }
+    header .ul {
+        width: 100%;
+        position: static;
+        bottom: 10%;
+        text-align: center;
+        padding-top: 1px;
+        font-size:20px;
+        font-weight:normal;
+        
+      
+        /*right: 0;*/
+    }
+
+    header .ul li {
+        /*color: blueviolet;*/
+        display: inline;
+        padding-right: 20px;
+    }
+        header .ul li a {
+            color: rgb(196, 111, 134);
+            /*right: 0;*/
+        }
+section{
+    position:relative;
+
+
+}
+
+
+nav {
+    padding: 0px;
+    border-top: 1px solid #e7e2d7;
+    margin: 14px 0px 0 10px;
+    /*float: left;*/
+    width: 15%;
+    padding: 10px 20px 20px;
+    border: 1px solid RGB(231, 226, 215);
+    border-radius: 8px;
+}
+    nav ul {
+        list-style: none;
+        margin-left: -30px;
+       
+    }
+        nav ul li {
+            border-bottom: 1px dotted #968765;
+            line-height:24px;
+        }
+            nav ul li a {
+                text-decoration: none;
+                color: rgb(196, 111, 134);
+                font-weight:bold;
+            }
+
+    nav h1 {
+        background: transparent url(/image/nav.svg) no-repeat 0px 0px;
+        color: #fff;
+        padding: 15px 1px 5px 10px;
+        margin: 0 1px 0 1px;
+        background-size: 100%;
+        /*text-align:center;*/
+        /*background-clip:padding-box;*/
+        /*display:inline;*/
+        height: 35px;
+    }
+    nav ul li:first-of-type {
+        border-top: 1px dotted RGB(150, 135, 101);
+        border-bottom: 1px dotted RGB(150, 135, 101);
+        color: #c17086;
+    }
+ 
+article {
+    /*position: absolute;*/
+    float: right;
+    width: 76%;
+    padding: 0px 20px 0px 20px;
+    margin: 0 10px 10px 10px;
+    border: 1px solid RGB(231, 226, 215);
+    border-radius: 8px;
+    text-align: justify;
+}
+    article h1 {
+        background: transparent url(/image/div1.svg) no-repeat 0px 0px;
+        color: white;
+        padding: 13px 5px 10px 35px;
+        margin: 10px 0 0 -33px;
+       
+        background-size: 100%;
+        /* background-clip: padding-box; */
+        display: inline-block;
+        height: 35px;
+        width: 97%;
+        font-size:20px;
+        /*position:absolute;
+        top:10px;
+        padding-bottom:10px;
+        margin-bottom:5px;*/
+    }
+    article h2 {
+        background: transparent url(/image/div2.svg) no-repeat 0px 0px;
+        color: white;
+        padding: 13px 5px 10px 35px;
+        margin: 10px 0 0 -33px;
+        
+        background-size: 100%;
+        /* background-clip: padding-box; */
+        display: inline-block;
+        height: 35px;
+        width: 97%;
+        font-size: 20px;
+        /*position:absolute;
+        top:10px;
+        padding-bottom:10px;
+        margin-bottom:5px;*/
+    }
+    article p {
+       
+        color: brown;
+        
+
+    }
+
+
+
+
+
+    article p:first-of-type {
+        font-family: Arial, serif;
+        text-transform: uppercase;
+        border-top: 1px dotted #968765;
+        border-bottom: 1px dotted #968765;
+        padding: 10px 0px;
+        color: #c17086;
+    }
+        article p:last-of-type {
+            font-family: Arial, serif;
+            text-transform: uppercase;
+            border-top: 1px dotted #968765;
+            border-bottom: 1px dotted #968765;
+            padding: 10px 0px;
+            color: black;
+        }
+/*section:after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
+
+@media screen and (max-width:950px){
+    article, header, nav {
+        
+        padding: 7px 17px 17px;
+        margin: 7px;
+        border: 1px solid red;
+        border-radius: 6px;
+        font-size:14px;
+    }
+    article {
+        width: 76%;
+    }
+    nav {
+        width: 15%;
+    }
+    header img {
+        width: 120px;
+        height: 90px;
+    }
+    article h1 h2 {
+        
+        color: #fff;
+        padding: 8px 4px 8px 30px;
+        margin: 8px 0 0 -20px;
+       
+        background-size: 100%;
+        /* background-clip: padding-box; */
+        display: inline-block;
+        height: 35px;
+        width: 97%;
+        font-size: 20px;
+        /*position:absolute;
+        top:10px;
+        padding-bottom:10px;
+        margin-bottom:5px;*/
+    }
+    
+
+}
+@media screen and (max-width:864px) {
+    article, header, nav {
+        padding: 7px 17px 17px;
+        margin: 7px;
+        border: 1px solid red;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    article {
+        width: 74%;
+    }
+
+    nav {
+        width: 15%;
+    }
+
+    header img {
+        width: 120px;
+        height: 90px;
+    }
+}
+
+
+
+@media screen and (max-width:570px) {
+    article, header, nav {
+        padding: 3px 5px 5px;
+        margin: 2px;
+        border: 0.2px solid blue;
+        border-radius: 2px;
+        font-size: 7px;
+    }
+
+    article {
+        width: 60%;
+    }
+
+    nav {
+        width: 15%;
+    }
+    header img {
+display:none;
+    }
+
+    article h1 h2 {
+        background: transparent;
+    }
+
+
+    h1{
+        font-size:14px;
+    }
+    ul li{
+        font-size:14px;
+    }
+
+}
